@@ -1,108 +1,125 @@
-# Chintamani Enterprises — Employee Field Service Management
+# Chintamani Enterprises
 
-Chintamani Enterprises is a web-based Employee Field Service Management application designed to simplify employee management, job assignments, attendance tracking, and administrative operations.
+### Employee Field Service Management System
 
-## Features
+Chintamani Enterprises is a web-based employee field service management system designed to manage employees, attendance, job assignments, and administrative operations.
 
-- **Admin Dashboard:** Manage employees and monitor field service operations.
-- **Employee Management:** Organize employee details and roles.
-- **Job Management:** Create, assign, and track service jobs.
-- **Attendance Tracking:** Record check-in and check-out times.
-- **Authentication:** Employee ID and password login.
-- **Google Sign-In:** Google authentication integration.
-- **Job History:** View completed jobs and track work progress.
-- **Responsive Interface:** Access the application through a web browser.
+## 🌐 Live Website
 
-## Technology Stack
+**Website:** [https://YOUR-FRONTEND-URL.onrender.com](https://chintamani-frontend.onrender.com)
+
+> Replace `https://YOUR-FRONTEND-URL.onrender.com` with your actual frontend Static Site URL from Render.
+
+## 🚀 Features
+
+- Employee registration and login
+- Google Sign-In
+- Admin dashboard
+- Employee management
+- Employee attendance management
+- Employee profile management
+- Job creation and assignment
+- Technician and employee tracking
+- MongoDB database integration
+- Responsive web interface
+
+## 🛠️ Technologies Used
 
 **Frontend**
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 **Backend**
 - Node.js
 - Express.js
+- REST API
 
 **Database**
-- MongoDB
+- MongoDB Atlas
 - Mongoose
 
 **Authentication**
-- JSON Web Tokens (JWT)
+- JWT authentication
 - Google Sign-In
 
-## Project Structure
+**Deployment**
+- GitHub
+- Render
+- MongoDB Atlas
+
+## 📁 Project Structure
 
 ```text
 chintamani-enterprises/
 ├── backend/
-│   ├── models/
-│   ├── routes/
 │   ├── server.js
+│   ├── routes/
+│   ├── models/
 │   └── package.json
-└── frontend/
-    ├── index.html
-    ├── app.js
-    ├── style.css
-    └── logo.png
+├── frontend/
+│   ├── index.html
+│   ├── app.js
+│   ├── employee-attendance.html
+│   ├── employee-profile.html
+│   └── admin-employee.html
+└── README.md
 ```
 
-## Getting Started
+*Note: The structure above is illustrative. Your actual repository may contain additional files and folders.*
 
-### Prerequisites
+## ⚙️ Local Setup
 
-- Node.js and npm
-- MongoDB, either locally or through MongoDB Atlas
-- A Google OAuth client ID if Google Sign-In is enabled
+### 1. Clone the repository
 
-### Installation
+```bash
+git clone https://github.com/Shreyas-nool/chintamani-enterprises.git
+```
 
-1. Clone the repository:
+### 2. Install backend dependencies
 
-   ```bash
-   git clone https://github.com/Shreyas-nool/chintamani-enterprises.git
-   ```
+```bash
+cd chintamani-enterprises/backend
+npm install
+```
 
-2. Open the project directory and navigate to the backend:
+### 3. Configure environment variables
 
-   ```bash
-   cd chintamani-enterprises/backend
-   ```
+Create a `.env` file inside the `backend` directory and configure the required environment variables.
 
-3. Install the dependencies:
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+```
 
-   ```bash
-   npm install
-   ```
+Replace the example values with your own credentials. Never publish your `.env` file or database passwords to GitHub.
 
-4. Create a `.env` file inside the backend directory and configure the required environment variables:
+### 4. Start the backend
 
-   ```env
-   MONGODB_URI=your_mongodb_connection_string
-   PORT=5000
-   JWT_SECRET=your_private_jwt_secret
-   GOOGLE_CLIENT_ID=your_google_oauth_client_id
-   ```
+```bash
+npm start
+```
 
-5. Start the backend using the command configured in your project:
+### 5. Open the frontend
 
-   ```bash
-   node server.js
-   ```
+Run the frontend using a local web server or the development setup configured for the project.
 
-6. Open `frontend/index.html` through a local development server, such as VS Code Live Server, and configure the frontend API URL to point to your backend.
+## ☁️ Deployment
 
-## Deployment
+- **Frontend:** Render Static Site
+- **Backend:** Render Web Service
+- **Database:** MongoDB Atlas
 
-The application can be deployed using hosting services such as Render for the frontend and backend, and MongoDB Atlas for the cloud database. Configure environment variables and the production API URL before deployment.
+## 🔐 Security
 
-## Security
+- Keep environment variables and secrets private.
+- Configure Google OAuth with the correct authorized JavaScript origins.
+- Use appropriate authentication and authorization for admin and employee accounts.
 
-- Never commit `.env` files, database credentials, or private secrets.
-- Use strong passwords and secure authentication settings.
-- Restrict access to administrative features and employee data.
+## 👨‍💻 Project
 
-## License
+**Chintamani Enterprises — Employee Field Service Management System**
 
-No license has been specified yet.
+Developed to simplify employee management, attendance tracking, and field service operations.
