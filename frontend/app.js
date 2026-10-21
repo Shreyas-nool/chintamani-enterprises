@@ -4,7 +4,7 @@
 // MAIN APP.JS
 // =====================================================
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://chintamani-backend-ccsu.onrender.com/api";
 
 
 // =====================================================
